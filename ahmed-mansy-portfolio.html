@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mansy - Software Engineer & Game Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f6f9;
+            --text-color: #34495e;
+            --accent-color: #e74c3c;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        .section {
+            background-color: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .experience-item {
+            margin-bottom: 30px;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 20px;
+            position: relative;
+        }
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+        .experience-item h3 {
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        .experience-item p {
+            margin: 5px 0;
+            color: var(--text-color);
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .skill:hover {
+            background-color: var(--accent-color);
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-item {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+        .contact-item i {
+            font-size: 2em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 30px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="fade-in">
+        <div class="container">
+            <h1>Ahmed Mansy</h1>
+            <p>Software Engineer | Game Developer | Founder</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section fade-in">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>I'm a versatile software engineer with a strong focus on game/mobile development and a passion for creating innovative solutions. With experience ranging from leading Unity development teams to founding my own company, I bring a unique blend of technical expertise and entrepreneurial spirit to every project.</p>
+        </section>
+
+        <section class="section fade-in">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="experience-item">
+                <h3>Software Engineer</h3>
+                <p><strong>PlanRadar</strong></p>
+                <p><i class="far fa-calendar-alt"></i> Dec 2021 - Present (2 years 8 months)</p>
+                <p>Developing and maintaining software solutions for construction and real estate industries.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Founder</h3>
+                <p><strong>www.SanabelApps.com</strong></p>
+                <p><i class="far fa-calendar-alt"></i> Aug 2016 - Present (8 years)</p>
+                <p>Leading a team to create innovative mobile applications and games.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Lead Unity Developer</h3>
+                <p><strong>Noory Books - مكتبة نوري</strong></p>
+                <p><i class="far fa-calendar-alt"></i> Mar 2021 - Present (3 years 5 months)</p>
+                <p>Spearheading the development of interactive educational content using Unity.</p>
+            </div>
+            <!-- ... other experience items ... -->
+        </section>
+
+        <section class="section fade-in">
+            <h2><i class="fas fa-cogs"></i> Skills</h2>
+            <div class="skills">
+                <span class="skill">Unity</span>
+                <span class="skill">C#</span>
+                <span class="skill">Game Development</span>
+                <span class="skill">Software Engineering</span>
+                <span class="skill">Mobile App Development</span>
+                <span class="skill">Team Leadership</span>
+                <span class="skill">Project Management</span>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <p>Coming soon! I'm currently curating a selection of my best projects to showcase here. Check back soon to see examples of my work in software engineering, game development, and more.</p>
+        </section>
+
+        <section class="section fade-in">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to contact me:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:ahmed@sanabelapps.com">ahmed@sanabelapps.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+					<p><a href="https://www.linkedin.com/in/ahmedmansy" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+					<p><a href="https://github.com/AhmadMansy" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ahmed Mansy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const fadeElems = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            fadeElems.forEach(elem => {
+                elem.style.opacity = 0;
+                elem.style.transform = 'translateY(20px)';
+                elem.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                observer.observe(elem);
+            });
+        });
+    </script>
+</body>
+</html>
